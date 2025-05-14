@@ -1,5 +1,5 @@
-ABC.exe:main.o big3.o fact.o rev.o palindrome.o
-	gcc -o ABC.exe main.o big3.o fact.o rev.o palindrome.o
+ABC.exe:main.o big3.o fact.o rev.o palindrome.o version.o
+	gcc -o ABC.exe main.o big3.o fact.o rev.o palindrome.o version.o
 	
 main.o:main.c
 	gcc -c main.c
@@ -11,3 +11,5 @@ rev.o:rev.c
 	gcc -c rev.c 
 palindrome.o:palindrome.c
 	gcc -c palindrome.c
+version.o:version.c
+	gcc -c version.c
